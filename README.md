@@ -9,3 +9,7 @@ A website where people can report cases of domestic violence
 ## Login page
 
 ![Screenshot](images/screenshots/login.png)
+
+## Admin page
+
+![Screenshot](images/screenshots/admin.png)

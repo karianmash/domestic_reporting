@@ -18,6 +18,10 @@ A website where people can report cases of domestic violence
 
 ![Screenshot](images/screenshots/centers.png)
 
+## Add center page
+
+![Screenshot](images/screenshots/add-center.png)
+
 ## Logout modal
 
 ![Screenshot](images/screenshots/guard.png)

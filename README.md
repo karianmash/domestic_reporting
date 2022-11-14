@@ -13,3 +13,7 @@ A website where people can report cases of domestic violence
 ## Admin page
 
 ![Screenshot](images/screenshots/admin.png)
+
+## Medical/Rescue centers page
+
+![Screenshot](images/screenshots/centers.png)

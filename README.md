@@ -1,6 +1,6 @@
 # domestic_reporting
 
-A website where people can report cases of domestic violence
+A PHP website where people can report cases of domestic violence to the nearest medical or rescue centers
 
 ## Home page
 

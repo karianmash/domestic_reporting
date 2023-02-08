@@ -4,8 +4,7 @@
 
   <?php
 
-    logout("../login.php");
-
+  logout("../login.php");
 
   ?>
   

@@ -11,10 +11,7 @@ if (isset($_GET['role'])) {
   confirmQuery($query);
 
   redirect("users.php");
-
 }
-
-
 
 ?>
 
@@ -31,7 +28,7 @@ if (isset($_GET['role'])) {
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-12">
-          
+
             <h3 class="page-header">Users</h1>
 
           </div>
@@ -52,31 +49,31 @@ if (isset($_GET['role'])) {
                 </tr>
               </thead>
               <tbody>
-                
-                  <?php 
 
-                    $sql = "SELECT users.user_id, roles.role_name, users.user_first_name, users.user_last_name, users.user_phone, users.user_email FROM users INNER JOIN roles ON users.user_role = roles.role_id";
-                    $query = mysqli_query($conn, $sql);
-                    confirmQuery($query);
+                <?php
 
-                    while ($row = mysqli_fetch_assoc($query)) {
-                      $user_id = $row['user_id'];
-                      $user_role = $row['role_name'];
-                      $user_first_name = $row['user_first_name'];
-                      $user_last_name = $row['user_last_name'];
-                      $user_phone = $row['user_phone'];
-                      $user_email = $row['user_email'];
-                  ?>
-                <tr>
-                  <td><?php echo $user_id; ?></td>
-                  <td><?php echo $user_role; ?></td>
-                  <td><?php echo $user_first_name; ?></td>
-                  <td><?php echo $user_last_name; ?></td>
-                  <td><?php echo $user_phone; ?></td>
-                  <td><?php echo $user_email; ?></td>
-                  <td class="text-center"><a href="users.php?role=1&id=<?php echo $user_id; ?>" class="btn btn-success btn-sm">admin</a></td>
-                  <td class="text-center"><a href="users.php?role=2&id=<?php echo $user_id; ?>" class="btn btn-primary btn-sm">subscriber</a></td>
-                </tr>
+                $sql = "SELECT users.user_id, roles.role_name, users.user_first_name, users.user_last_name, users.user_phone, users.user_email FROM users INNER JOIN roles ON users.user_role = roles.role_id";
+                $query = mysqli_query($conn, $sql);
+                confirmQuery($query);
+
+                while ($row = mysqli_fetch_assoc($query)) {
+                  $user_id = $row['user_id'];
+                  $user_role = $row['role_name'];
+                  $user_first_name = $row['user_first_name'];
+                  $user_last_name = $row['user_last_name'];
+                  $user_phone = $row['user_phone'];
+                  $user_email = $row['user_email'];
+                ?>
+                  <tr>
+                    <td><?php echo $user_id; ?></td>
+                    <td><?php echo $user_role; ?></td>
+                    <td><?php echo $user_first_name; ?></td>
+                    <td><?php echo $user_last_name; ?></td>
+                    <td><?php echo $user_phone; ?></td>
+                    <td><?php echo $user_email; ?></td>
+                    <td class="text-center"><a href="users.php?role=1&id=<?php echo $user_id; ?>" class="btn btn-success btn-sm">admin</a></td>
+                    <td class="text-center"><a href="users.php?role=2&id=<?php echo $user_id; ?>" class="btn btn-primary btn-sm">subscriber</a></td>
+                  </tr>
                 <?php } ?>
               </tbody>
             </table>
@@ -85,5 +82,4 @@ if (isset($_GET['role'])) {
       </div>
       <!-- /.container-fluid -->
 
-<?php include_once("includes/admin_footer.php"); ?>
-      
+      <?php include_once("includes/admin_footer.php"); ?>

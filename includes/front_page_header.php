@@ -17,6 +17,9 @@
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+  <!-- Add a favicon -->
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
   <!-- Custom styles for this template -->
   <link href="css/heroic-features.css" rel="stylesheet">
 
